@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import { Routes, Route } from 'react-router-dom'; 
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,14 +15,18 @@ import Contact from './components/Contact/Contact';
 function App() {
   return (
     <>
+      
+      <BrowserRouter basename="/fssampleportal">
       <Navbarcustom />
-      <Routes>
-        <Route exact path="./" element={<Header />} />
-        <Route exact path='about' element={<About />} />
-        <Route exact path='services' element={<Services />} />
-        <Route exact path='contact' element={<Contact />} />
-      </Routes>
-      <Footer />
+      <Switch>
+        <Route path="/" exact component={<Header />} />
+        <Route path='/about' component={<About />} />
+        <Route path='/services' component={<Services />} />
+        <Route path='/contact' component={<Contact />} />
+            
+      </Switch>
+       <Footer />
+      </BrowserRouter>
     </>
   );
 }
