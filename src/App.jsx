@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter basename="/fssampleportal">
       <Navbarcustom />
       <Routes>
-        <Route path="/" exact element={<Header />} />
+        <Route path="/" element={<Header />} />
         <Route path='/about' element={<About />} />
         <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
