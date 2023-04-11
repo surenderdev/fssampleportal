@@ -1,0 +1,327 @@
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Work Sans", sans-serif;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    margin-top:0px;
+}
+
+
+.page-cover-title {
+    display: block;
+    font-size: 36px;
+    line-height: 45px;
+    color:#222222;
+    margin: 3rem;
+    text-align: center;
+    font-weight: 800;
+    
+}
+
+
+.title {
+    color: #222222;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.image-bg{
+    margin-top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:60vh;
+    width:100%;
+    opacity: 0.8;
+}
+
+h1 {
+    margin: 4rem auto 4rem;
+  }
+  
+  h4 {
+    margin-top: 1rem;
+  }
+  
+  .person--image {
+    width: 99%;
+    height: 17rem;
+    object-fit: cover;
+    border-color: red;
+    border-style: single;
+    display: cover;
+    object-fit:fill;
+   
+  }
+  
+  .teamcard {
+    box-shadow: 0 4px 8px 0 rgba(250, 20, 20, 0.8);
+    max-width: 320px;
+    margin: 0rem  0.10rem;
+    text-align: center;
+    font-family: arial;
+    border-color: aqua;
+    border-style: double;
+    font-size: 1rem;
+    background-color: #fda5a5;
+  }
+  
+  .price {
+    color: grey;
+  }
+  
+  .pname{
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  .card-button {
+    border: none;
+    outline: 0;
+    padding: 0px;
+    color: white;
+    background-color: #4161f0;
+    text-align: center;
+    cursor: pointer;
+    width: 25%;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    }
+  
+  .card-button:hover {
+    opacity: 0.8;
+    color:rgb(20, 219, 233);
+    background-color: #6d25f3;
+  }
+  
+  .teamcard:hover {
+    background-color:rgb(238, 241, 63);
+    cursor:pointer;
+  }
+  
+
+.header{
+    font-size:36px;
+    color:white;
+    text-align:center;
+    
+
+}
+
+.aboutsec{
+    width:100%;
+    height:60vh;
+    padding-left: 25px;
+    padding-top: 20px;
+    color:brown;
+    overflow: hidden;
+    background: #fda5a5;
+    background-image: url('../images/deepmind2.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutsec h2{
+    vertical-align:middle;
+    text-align:left;
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.headerimagetext {
+    position: relative;
+    background: url(../images/mainbg1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+
+.headerimagetext >  h2 {
+    
+    font-size:1.0rem;
+    color:white;
+    font-weight: 800;
+    position:absolute;
+    left:30%;
+    top:0;
+    width:100%;
+    height:70vh;
+    padding:4rem;
+    justify-content: center;
+    align-items:center;
+   
+    z-index:1000;
+}
+
+@media only screen  and (max-width:180px){
+    .headerimagetext{
+        height:60vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .headerimagetext >h2{
+        padding:3rem;
+        font-size:0.6rem;
+        left:0%;
+        height:60vh;
+        text-align:center;
+        justify-content: center;
+        align-items:center;
+        position: absolute;
+        
+
+    }
+
+}
+
+@media only screen  and (min-width:180px) and (max-width:270px){
+    .aboutsec h2{
+        vertical-align:middle;
+        text-align:left;
+        font-size: 16px;
+        font-weight:bold;
+    }
+    .headerimagetext{
+        height:70vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .headerimagetext >h2{
+        padding:3rem;
+        font-size:0.85rem;
+        left:0%;
+        height:70vh;
+        text-align:center;
+        justify-content: center;
+        align-items:center;
+        position: absolute;
+        
+
+    }
+}
+
+@media only screen  and (min-width:270px) and (max-width:580px){
+    .aboutsec h2{
+        vertical-align:middle;
+        text-align:left;
+        font-size: 19px;
+        font-weight:bold;
+        justify-content: center;
+    }
+    .headerimagetext{
+        height:40vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .headerimagetext >h2{
+        padding:3rem;
+        font-size:0.85rem;
+        left:0;
+        top:0%;
+        height:40vh;
+        text-align:center;
+        justify-content: center;
+        
+        position: absolute;
+        
+
+    }
+}
+
+@media only screen  and (min-width:580px) and (max-width:720px){
+    .aboutsec h2{
+        vertical-align:middle;
+        text-align:left;
+        font-size: 22px;
+        font-weight:bold;
+        justify-content: center;
+    }
+    .headerimagetext{
+        height:50vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .headerimagetext >h2{
+        padding:3rem;
+        font-size:1rem;
+        left:0;
+        top:0%;
+        height:50vh;
+        text-align:center;
+        justify-content: center;
+        
+        position: absolute;
+        
+
+    }
+}
+            
+@media only screen  and (min-width:720px) and (max-width:980px){
+    .headerimagetext{
+        height:40vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .headerimagetext >h2{
+        padding:3rem;
+        font-size:1.3rem;
+        left:0%;
+        height:40vh;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        
+
+    }
+}
+
+@media only screen  and (min-width:980px) {
+    .headerimagetext{
+        height:55vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .headerimagetext >h2{
+        padding:3rem;
+        font-size:1.4rem;
+        left:0;
+        top:0%;
+        height:55vh;
+        text-align:center;
+        justify-content: center;
+        
+        position: absolute;
+        
+
+    }
+}
