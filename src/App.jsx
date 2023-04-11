@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,13 +17,13 @@ function App() {
       
       <BrowserRouter basename="/fssampleportal">
       <Navbarcustom />
-      <Switch>
-        <Route path="/" exact component={<Header />} />
-        <Route path='/about' component={<About />} />
-        <Route path='/services' component={<Services />} />
-        <Route path='/contact' component={<Contact />} />
+      <Routes>
+        <Route path="/" exact element={<Header />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/contact' element={<Contact />} />
             
-      </Switch>
+      </Routes>
        <Footer />
       </BrowserRouter>
     </>
