@@ -16,7 +16,7 @@ function App() {
     <>
       <Navbarcustom />
       <Routes>
-        <Route exact path='/' element={<Header />} />
+        <Route exact path='' element={<Header />} />
         <Route exact path='about' element={<About />} />
         <Route exact path='services' element={<Services />} />
         <Route exact path='contact' element={<Contact />} />
