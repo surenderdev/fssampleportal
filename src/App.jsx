@@ -18,10 +18,10 @@ function App() {
       <BrowserRouter basename="/fssampleportal">
       <Navbarcustom />
       <Routes>
-        <Route path="/" element={<Header />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path="/" element={<Header />}></Route> 
+        <Route path='/about' element={<About />}></Route> 
+        <Route path='/services' element={<Services />}></Route> 
+        <Route path='/contact' element={<Contact />}></Route> 
             
       </Routes>
        <Footer />
