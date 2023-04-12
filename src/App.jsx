@@ -15,10 +15,10 @@ function App() {
   return (
     <>
       
-      <BrowserRouter basename="/fssampleportal">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbarcustom />
       <Routes>
-        <Route path="/" element={<Header />}></Route> 
+        <Route path="" element={<Header />}></Route> 
         <Route path='/about' element={<About />}></Route> 
         <Route path='/services' element={<Services />}></Route> 
         <Route path='/contact' element={<Contact />}></Route> 
